@@ -1,0 +1,11 @@
+#!/bin/bash
+# Create a file
+touch example.txt
+
+# Assign permissions
+chmod 700 example.txt  # Read, write, and execute for owner
+chmod 750 example.txt  # Read, write, and execute for owner; read and execute for group
+chmod 755 example.txt  # Read, write, and execute for owner; read and execute for group; read and execute for others
+
+# Verify permissions
+ls -l example.txt

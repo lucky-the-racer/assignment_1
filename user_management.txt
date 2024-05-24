@@ -1,0 +1,21 @@
+#!/bin/bash
+# Create a new user
+sudo useradd -m testuser
+
+# Set password for the new user
+echo "testuser:password" | sudo chpasswd
+
+# Create a new group
+sudo groupadd testgroup
+
+# Add the user to the group
+sudo usermod -aG testgroup testuser
+
+# Modify user properties
+sudo usermod -c "Updated Test User" testuser
+
+# Delete the user
+sudo userdel -r testuser
+
+# Delete the group
+sudo groupdel testgroup

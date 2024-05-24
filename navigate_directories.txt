@@ -1,0 +1,17 @@
+#!/bin/bash
+# Navigate to home directory
+cd ~
+
+# List contents of a directory
+ls -l
+
+# Create and navigate through directories
+mkdir -p test_dir/sub_dir
+cd test_dir/sub_dir
+
+# Create a file and list its contents
+echo "This is a test file" > example.txt
+cat example.txt
+
+# Move back to the home directory
+cd ~
